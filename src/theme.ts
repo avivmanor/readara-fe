@@ -1,37 +1,57 @@
-import { extendTheme } from "@mui/joy";
+import { extendTheme } from '@mui/joy/styles';
 
 const theme = extendTheme({
   colorSchemes: {
     light: {
       palette: {
-        primary: {
-          solidBg: '#2E7D32',        // Main CTA background
-          solidHoverBg: '#1B5E20',   // Darker hover state
-          solidActiveBg: '#1B5E20',  // Active state
-          plainColor: '#2E7D32',     // Text or icons
-          outlinedBorder: '#60AD5E', // Outline buttons or accents
-          outlinedHoverBg: '#A5D6A7',// Subtle hover fill
-          softColor: '#2E7D32',      // Soft variant
-          softBg: '#F5FDF7',         // Soft background
-        },
         background: {
-          body: '#F5FDF7',           // Main background
+          body: '#F9F7F4',
+          surface: '#FFFFFF',
+          level1: '#F9F7F4',
+          level2: '#f7f1e9',
         },
+        primary: {
+          solidColor: '#FFFFFF',
+          solidBg: '#4B5768',
+          plainColor: '#4B5768',
+          100: '#4B5768',
+          500: '#4B5768',
+        },
+        neutral: {
+          plainColor: '#2F2F2F',
+          100: '#7A7A7A',
+          200: '#6c785f'
+        },
+        danger: {
+          500: '#D1735A',
+        },
+        warning: {
+          500: '#F0C58B',
+        },
+        divider: '#E5E5E5',
         text: {
-          primary: '#212121',        // Main text
-          secondary: '#4E6B5F',      // Subtle/descriptive text
+          primary: '#2F2F2F',
+          secondary: '#7A7A7A',
         },
       },
     },
   },
   fontFamily: {
-    body: "Inter, system-ui, sans-serif",
-    display: "Poppins, system-ui, sans-serif",
+    display: 'Georgia, serif',
+    body: '"Inter", sans-serif',
   },
-  radius: {
-    sm: "4px",
-    md: "8px",
+  typography: {
+    h1: {
+      fontWeight: 'bold',
+      fontSize: '3rem',
+    },
+    h2: {
+      fontWeight: 'bold',
+      fontSize: '2rem',
+    },
+    "body-xs": {
+      fontSize: '1rem',
+    },
   },
 });
-
 export default theme;
