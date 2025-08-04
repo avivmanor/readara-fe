@@ -8,11 +8,17 @@ export const MutedButton = ({ children, selected = false, ...props }: ButtonProp
         color: 'primary.plainColor',
         '&:hover': {
           backgroundColor: 'background.level1',
+          border: 'transparent',
         },
         '&:active': {
           backgroundColor: 'background.level2',
-          borderColor: 'transparent',
+          border: 'transparent',
+
         },  
+        '&:focus': {
+          backgroundColor: 'background.level1',
+          border: 'transparent',
+        },
         borderRadius: '10px',
         borderColor: 'transparent',
         margin: '5px',
